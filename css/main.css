@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  max-width: 100%;
+  background-color: #EDF1F4; }
+
+section {
+  max-width: 300px;
+  margin: 0 auto;
+  padding-top: 30px;
+  position: relative; }
+  section form {
+    border: 1px solid #E5EAEE;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px #ccc; }
+    section form h3 {
+      text-align: center;
+      background-color: #EFF4F8;
+      border-bottom: 1px solid #F0F4F7;
+      padding: 10px; }
+    section form p {
+      margin: 10px 15px; }
+    section form input {
+      margin: 5px auto;
+      display: block;
+      padding: 3px 5px;
+      width: 260px; }
+      section form input[type='password'] {
+        margin-bottom: 15px; }
+    section form .btn {
+      width: 120px;
+      color: #fff;
+      background-color: #3F86D4;
+      border: none;
+      border-radius: 20px;
+      padding: 5px;
+      margin-bottom: 15px; }
+  section .popup {
+    max-width: 240px;
+    border: 1px solid #E5EAEE;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px #ccc;
+    position: absolute;
+    top: 195px;
+    left: 10%; }
+    section .popup p {
+      padding: 5px; }
+    section .popup p:not(.condition) {
+      text-align: left;
+      margin-left: 10px; }
+
+.red {
+  color: red; }
+
+.green {
+  color: green; }
+
+.none {
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */
