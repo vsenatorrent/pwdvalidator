@@ -1,65 +1,87 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 body {
-  max-width: 100%;
-  background-color: #EDF1F4; }
+  background-color: #EDF1F4;
+}
 
-section {
-  max-width: 300px;
+.container {
+  width: 300px;
   margin: 0 auto;
   padding-top: 30px;
-  position: relative; }
-  section form {
-    border: 1px solid #E5EAEE;
-    border-radius: 3px;
-    background-color: #fff;
-    box-shadow: 0 1px 1px #ccc; }
-    section form h3 {
-      text-align: center;
-      background-color: #EFF4F8;
-      border-bottom: 1px solid #F0F4F7;
-      padding: 10px; }
-    section form p {
-      margin: 10px 15px; }
-    section form input {
-      margin: 5px auto;
-      display: block;
-      padding: 3px 5px;
-      width: 260px; }
-      section form input[type='password'] {
-        margin-bottom: 15px; }
-    section form .btn {
-      width: 120px;
-      color: #fff;
-      background-color: #3F86D4;
-      border: none;
-      border-radius: 20px;
-      padding: 5px;
-      margin-bottom: 15px; }
-  section .popup {
-    max-width: 240px;
-    border: 1px solid #E5EAEE;
-    border-radius: 3px;
-    background-color: #fff;
-    box-shadow: 0 1px 1px #ccc;
-    position: absolute;
-    top: 195px;
-    left: 10%; }
-    section .popup p {
-      padding: 5px; }
-    section .popup p:not(.condition) {
-      text-align: left;
-      margin-left: 10px; }
+}
+
+.caption {
+  text-align: center;
+  background-color: #EFF4F8;
+  border-bottom: 1px solid #F0F4F7;
+  padding: 10px;
+  font-size: 24px;
+}
+
+.form {
+  border: 1px solid #E5EAEE;
+  border-radius: 3px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 1px #ccc;
+          box-shadow: 0 1px 1px #ccc;
+}
+
+.form__label {
+  margin: 10px 15px;
+  display: block;
+  position: relative;
+}
+
+.form__input {
+  margin: 5px auto;
+  display: block;
+  padding: 3px 5px;
+  width: 85%;
+}
+
+.form__submit {
+  width: 35%;
+  color: #fff;
+  background-color: #3F86D4;
+  border: none;
+  border-radius: 20px;
+  padding: 5px;
+  display: block;
+  margin: 15px auto;
+}
+
+.form__popup {
+  width: 80%;
+  border: 1px solid #E5EAEE;
+  border-radius: 3px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 1px #ccc;
+          box-shadow: 0 1px 1px #ccc;
+  position: absolute;
+  padding: 5px;
+  top: 50px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.form__condition {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.form__condition-caption {
+  padding: 5px;
+}
 
 .red {
-  color: red; }
+  color: red;
+}
 
 .green {
-  color: green; }
-
-.none {
-  display: none; }
-
+  color: green;
+}
 /*# sourceMappingURL=main.css.map */

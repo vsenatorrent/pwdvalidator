@@ -4,63 +4,67 @@
 }
 
 body {
-  max-width: 100%;
   background-color: #EDF1F4;
 }
 
-section {
-  max-width: 300px;
+.container {
+  width: 300px;
   margin: 0 auto;
   padding-top: 30px;
-  position: relative;
-  form {
-    border: 1px solid #E5EAEE;
-    border-radius: 3px;
-    background-color: #fff;
-    box-shadow:0 1px 1px #ccc;
-    h3 {
-      text-align: center;
-      background-color: #EFF4F8;
-      border-bottom: 1px solid #F0F4F7;
-      padding: 10px;
-    }
-    p {
-      margin: 10px 15px;
-    }
-    input {
-      margin: 5px auto;
-      display: block;
-      padding: 3px 5px;
-      width: 260px;
-      &[type='password'] {
-        margin-bottom: 15px;
-      }
-    }
-    .btn {
-      width: 120px;
-      color: #fff;
-      background-color: #3F86D4;
-      border: none;
-      border-radius: 20px;
-      padding: 5px;
-      margin-bottom: 15px;
-    }
+}
+
+.caption {
+    text-align: center;
+    background-color: #EFF4F8;
+    border-bottom: 1px solid #F0F4F7;
+    padding: 10px;
+    font-size: 24px;
   }
-  .popup {
-    max-width: 240px;
+
+.form {
+  border: 1px solid #E5EAEE;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px #ccc;
+  &__label {
+    margin: 10px 15px;
+    display: block;
+    position: relative;
+  }
+  &__input {
+    margin: 5px auto;
+    display: block;
+    padding: 3px 5px;
+    width: 85%;
+  }
+  &__submit {
+    width: 35%;
+    color: #fff;
+    background-color: #3F86D4;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    display: block;
+    margin: 15px auto;
+  }
+  &__popup {
+    width: 80%;
     border: 1px solid #E5EAEE;
     border-radius: 3px;
     background-color: #fff;
     box-shadow:0 1px 1px #ccc;
     position: absolute;
-    top: 195px;
-    left: 10%;
-    p {
+    padding: 5px;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  &__condition {
+    text-align: left;
+    margin-left: 10px;
+    // transition: all 0.2s linear;
+    &-caption {
       padding: 5px;
-    }
-    p:not(.condition) {
-      text-align: left;
-      margin-left: 10px;
     }
   }
 }
@@ -71,8 +75,4 @@ section {
 
 .green {
   color: green;
-}
-
-.none {
-  display: none;
 }

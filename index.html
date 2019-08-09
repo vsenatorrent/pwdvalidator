@@ -12,26 +12,26 @@
 <body>
 
 
-  <section>
-    <form action="">
-      <h3>Проверка пароля</h3>
-      <p>Имя пользователя:</p>
-      <input type="text">
-      <p>Пароль:</p>
-      <input type="password">
-      <input type="button" value="Отправить" class="btn">
+  <div class="container">
+    <h1 class="caption">Проверка пароля</h1>
+    <form class="form">
+      <label for="username" class="form__label">Имя пользователя:</label>
+      <input type="text" id="username" class="form__input" required>
+      <label for="userpwd" class="form__label">Пароль:
+        <div class="form__popup" hidden>
+          <p class="form__condition-caption">
+            Пароль должен соответствовать критериям:
+          </p>
+          <p class="form__condition form__condition--oneLetter red">Минимум одна буква</p>
+          <p class="form__condition form__condition--oneUpperLetter red">Минимум одна заглавная буква</p>
+          <p class="form__condition form__condition--oneNum red">Минимум одна цифра</p>
+          <p class="form__condition form__condition--length red">Быть не менее 8 символов</p>
+        </div>
+      </label>
+      <input type="password" id="userpwd" class="form__input" required>
+      <input type="submit" value="Отправить" class="form__submit">
     </form>
-
-    <div class="popup none">
-      <p class="condition">
-        Пароль должен соответствовать критериям:
-      </p>
-      <p class="mbukva">Минимум одна буква</p>
-      <p class="Bbukva">Минимум одна заглавная буква</p>
-      <p class="numb">Минимум одна цифра</p>
-      <p class="length">Быть не менее 8 символов</p>
-    </div>
-  </section>
+  </div>
 
 
 
