@@ -60,6 +60,8 @@ const highlightError = (node, removeClass, addClass) => {
   node.removeClass(removeClass).addClass(addClass);
 }
 
+let success = false;
+
 passwordInput.on('keyup', function(){
   const inputValue = $(this).val();
   console.log(inputValue);
@@ -79,10 +81,16 @@ passwordInput.on('keyup', function(){
   const lengthCondition = inputValue.length > 7;
   lengthCondition ? highlightError(lengthNode, 'red', 'green') : highlightError(lengthNode, 'green', 'red');
    
-  oneLetterCondition && oneUpperLetterCondition && oneNumCondition && lengthCondition ? popup.hide() : popup.show();
+  if(oneLetterCondition && oneUpperLetterCondition && oneNumCondition && lengthCondition){
+    popup.hide();
+    success = true;
+  } else {
+    popup.show()
+    success = false;
+  }
 })
 
-// form.on('submit', function(e){
-//   e.preventDefault();
-//   oneLetterCondition && oneUpperLetterCondition && oneNumCondition && lengthCondition ? true : false;
-// })
+form.on('submit', function(e){
+  e.preventDefault();
+  success ? alert('success') : alert('fail');
+})
